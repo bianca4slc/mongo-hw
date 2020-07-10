@@ -43,6 +43,7 @@ var scrape = function () {
         articles.push(dataToAdd);
       }
     });
+    console.log(articles);
     return articles;
   });
 };

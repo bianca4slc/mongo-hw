@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   function initPage() {
     // Run an AJAX request for any unsaved headlines
-    $.get("/api/articles?saved=false").then(function (data) {
+    $.get("/api/headlines?saved=false").then(function (data) {
       articleContainer.empty();
       // If we have headlines, render them to the page
       if (data && data.length) {
@@ -121,8 +121,9 @@ $(document).ready(function () {
   }
 
   function handleArticleScrape() {
+    console.log("testing");
     // This function handles the user clicking any "scrape new article" buttons
-    $.get("/api/fetch").then(function (data) {
+    $.get("api/fetch").then(function (data) {
       // If we are able to successfully scrape the NYTIMES and compare the articles to those
       // already in our collection, re render the articles on the page
       // and let the user know how many unique articles we were able to save
