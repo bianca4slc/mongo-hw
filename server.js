@@ -1,6 +1,6 @@
 var express = require("express");
 
-var routes = require("./routes/htmlroutes");
+// var routes = require("./routes/htmlroutes");
 
 var mongoose = require("mongoose");
 
