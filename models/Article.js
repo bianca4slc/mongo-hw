@@ -5,7 +5,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 // Create the ArticleSchema with our schema class
-var ArticleSchema = new Schema({
+var articleSchema = new Schema({
   // Article, a string, must be entered
   article: {
     type: String,
